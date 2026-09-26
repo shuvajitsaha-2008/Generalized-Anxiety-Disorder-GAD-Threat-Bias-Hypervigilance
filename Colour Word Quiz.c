@@ -27,17 +27,22 @@ int main()
     printf("Ignore the meaning of the word.\n");
     printf("Identify the COLOUR as quickly as possible.\n\n");
     printf("1 = RED, 2 = GREEN, 3 = BLUE, 4 = YELLOW\n");
+    printf("So champ...\n\n");
     printf("Press any key to start...");
     getch();
     for(i = 1; i <= 20; i++)
-    {
-    	
+    {	
         wordType = rand() % 2;
         wordNumber = rand() % 8;
         colour = rand() % 4 + 1;
         system("cls");
         printf("\n\n");
         printf("             ROUND %d / 20\n\n", i);
+        Sleep(2000);
+        system("cls");
+        printf("1 = RED, 2 = GREEN, 3 = BLUE, 4 = YELLOW\n");
+        Sleep(3000);
+        system("cls");
         printf("             GET READY...\n");
         Sleep(1000);
         system("cls");
@@ -53,7 +58,6 @@ int main()
         printf("                  1");
         Sleep(700);
         system("cls");
-        
         if(wordType == 0)
         {
             printf("\n\n");
